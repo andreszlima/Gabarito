@@ -1,4 +1,4 @@
-## Sinopse
+## Resumo
 
 Este programa foi criado com o intuito de acompanhar a resolução de questões em fontes onde isso já não é feito automaticamente, como na resolução de questões provenientes de arquivos de PDF, por exemplo.
 
