@@ -1,0 +1,14 @@
+c:\users\asl\source\repos\Gabarito\Gabarito\bin\Release\Gabarito.exe.config
+c:\users\asl\source\repos\Gabarito\Gabarito\bin\Release\Gabarito.exe
+c:\users\asl\source\repos\Gabarito\Gabarito\bin\Release\Gabarito.pdb
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.Gabarito.resources
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.Iniciar.resources
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.Properties.Resources.resources
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.Resposta.resources
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.Resultado.resources
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.csproj.GenerateResource.Cache
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.csproj.CoreCompileInputs.cache
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.exe
+c:\users\asl\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.pdb
+C:\Users\ASL\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.csprojResolveAssemblyReference.cache
+C:\Users\ASL\source\repos\Gabarito\Gabarito\obj\Release\Gabarito.csproj.ResolveComReference.cache
