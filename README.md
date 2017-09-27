@@ -1,6 +1,25 @@
 ## Resumo
 
-Este programa foi criado com o intuito de acompanhar a resolução de questões em fontes onde isso já não é feito automaticamente, como na resolução de questões provenientes de arquivos de PDF, por exemplo.
+Este programa foi criado com o intuito de acompanhar a resolução de questões em fontes onde isso já não é feito automaticamente, como na resolução de questões provenientes de arquivos de PDF, por exemplo. É um programa simples, mas faz o que não achei em nenhum outro lugar.
+
+Início:
+
+![1](Imagens/1.jpeg)
+
+Coloque suas respostas:
+
+![2](Imagens/2.jpeg)
+![3](Imagens/3.jpeg)
+
+Coloque as respostas do gabarito:
+
+![4](Imagens/4.jpeg)
+![5](Imagens/5.jpeg)
+
+Resultado final:
+
+![6](Imagens/6.jpeg)
+
 
 ## Funcionalidades
 
@@ -26,4 +45,4 @@ Basta abrir o arquivo executável, que pode ser baixado aqui: https://github.com
 
 ## License
 
-A licença de uso é MIT. Você pode usar, modificar, publicar, vender, fazer o que quiser. Para mais informações, leia: https://github.com/andreszlima/Gabarito/blob/master/LICENSE.md
+A licença de uso é MIT. Você pode usar, modificar, publicar, vender, fazer o que quiser. Para mais informações, leia: [License.md](LICENSE.md)
