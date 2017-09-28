@@ -47,6 +47,6 @@ Caso não saiba qual é o arquivo, ele será o único arquivo executável (.exe)
 
 ![7](Imagens/7.jpeg)
 
-## License
+## Licença
 
 A licença de uso é MIT. Você pode usar, modificar, publicar, vender, fazer o que quiser. Para mais informações, leia: [License.md](LICENSE.md)
