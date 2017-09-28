@@ -41,11 +41,11 @@
             // Bterminar
             // 
             this.Bterminar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Bterminar.Location = new System.Drawing.Point(94, 108);
+            this.Bterminar.Location = new System.Drawing.Point(43, 108);
             this.Bterminar.Name = "Bterminar";
-            this.Bterminar.Size = new System.Drawing.Size(75, 23);
+            this.Bterminar.Size = new System.Drawing.Size(186, 23);
             this.Bterminar.TabIndex = 5;
-            this.Bterminar.Text = "Terminar";
+            this.Bterminar.Text = "Esta é a última questão. Terminar";
             this.Bterminar.UseVisualStyleBackColor = true;
             this.Bterminar.Click += new System.EventHandler(this.Bterminar_Click);
             // 

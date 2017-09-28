@@ -76,6 +76,14 @@ namespace Gabarito
             comboBox1.Text = "Excel (*.xlsx)";
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
 
+
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.AutoPopDelay = 5000;
+            toolTip1.InitialDelay = 200;
+            toolTip1.ReshowDelay = 500;
+
+            toolTip1.SetToolTip(this.button1, "O arquivo será salvo na mesma pasta de onde este programa está sendo executado");
+
         }
 
         private void Resultado_FormClosed(object sender, FormClosedEventArgs e)
@@ -126,24 +134,41 @@ namespace Gabarito
                 txtNomeExport.Text = "Resultado";
             }
 
-            if (File.Exists(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text + ".csv"))
+            try
             {
-                txtNomeExport.Text = txtNomeExport.Text + "1";
+                if (comboBox1.Text == "Excel (*.xlsx)")
+                {
+                    if (File.Exists(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text + ".xlsx"))
+                    {
+                        txtNomeExport.Text = txtNomeExport.Text + "1";
+                    }
+
+                    wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault);
+                }
+                else if (comboBox1.Text == "CSV (*.csv)")
+                {
+                    if (File.Exists(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text + ".csv"))
+                    {
+                        txtNomeExport.Text = txtNomeExport.Text + "1";
+                    }
+
+                    wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlCSV);
+                }
+                else
+                {
+                    wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault);
+                    MessageBox.Show("Como o formato selecionado não está disponível, o arquivo foi salvo no formato de Excel comum (*.xlsx)");
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("O nome do arquivo é inválido. Não use caracteres especiais e tente novamente.");
+                
             }
 
-            if (comboBox1.Text == "Excel (*.xlsx)")
-            {
-                wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault);
-            }
-            else if (comboBox1.Text == "CSV (*.csv)")
-            {
-                wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlCSV);
-            }
-            else
-            {
-                wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault);
-                MessageBox.Show("Como o formato selecionado não está disponível, o arquivo foi salvo no formato de Excel comum (*.xlsx)");
-            }
+            
 
             
 

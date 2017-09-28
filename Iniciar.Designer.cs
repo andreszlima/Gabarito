@@ -39,7 +39,7 @@
             // 
             // Bcomecar
             // 
-            this.Bcomecar.Location = new System.Drawing.Point(274, 84);
+            this.Bcomecar.Location = new System.Drawing.Point(146, 57);
             this.Bcomecar.Name = "Bcomecar";
             this.Bcomecar.Size = new System.Drawing.Size(75, 23);
             this.Bcomecar.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // Bfechar
             // 
-            this.Bfechar.Location = new System.Drawing.Point(141, 83);
+            this.Bfechar.Location = new System.Drawing.Point(13, 56);
             this.Bfechar.Name = "Bfechar";
             this.Bfechar.Size = new System.Drawing.Size(75, 23);
             this.Bfechar.TabIndex = 1;
@@ -60,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(199, 36);
+            this.label1.Location = new System.Drawing.Point(71, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 2;
@@ -69,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 132);
+            this.label2.Location = new System.Drawing.Point(45, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
             this.label2.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // nPrimeira
             // 
-            this.nPrimeira.Location = new System.Drawing.Point(267, 130);
+            this.nPrimeira.Location = new System.Drawing.Point(139, 103);
             this.nPrimeira.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -98,7 +98,7 @@
             this.AcceptButton = this.Bcomecar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 173);
+            this.ClientSize = new System.Drawing.Size(235, 145);
             this.Controls.Add(this.nPrimeira);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
