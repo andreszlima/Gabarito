@@ -73,6 +73,8 @@ namespace Gabarito
             nErros.ReadOnly = true;
             nAproveitamento.ReadOnly = true;
 
+            comboBox1.Text = "Excel (*.xlsx)";
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
 
         }
 
@@ -129,7 +131,21 @@ namespace Gabarito
                 txtNomeExport.Text = txtNomeExport.Text + "1";
             }
 
-            wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlCSVWindows);
+            if (comboBox1.Text == "Excel (*.xlsx)")
+            {
+                wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault);
+            }
+            else if (comboBox1.Text == "CSV (*.csv)")
+            {
+                wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlCSV);
+            }
+            else
+            {
+                wb.SaveAs(@Environment.CurrentDirectory + "\\" + txtNomeExport.Text, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookDefault);
+                MessageBox.Show("Como o formato selecionado não está disponível, o arquivo foi salvo no formato de Excel comum (*.xlsx)");
+            }
+
+            
 
             wb.Close(false);
 

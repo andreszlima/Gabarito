@@ -43,6 +43,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtNomeExport = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -135,17 +139,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(228, 332);
+            this.button1.Location = new System.Drawing.Point(222, 76);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Exportar";
+            this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtNomeExport
             // 
-            this.txtNomeExport.Location = new System.Drawing.Point(120, 334);
+            this.txtNomeExport.Location = new System.Drawing.Point(114, 78);
             this.txtNomeExport.Name = "txtNomeExport";
             this.txtNomeExport.Size = new System.Drawing.Size(100, 20);
             this.txtNomeExport.TabIndex = 6;
@@ -153,20 +157,53 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 337);
+            this.label4.Location = new System.Drawing.Point(20, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Nome do arquivo";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Excel (*.xlsx)",
+            "CSV (*.csv)"});
+            this.comboBox1.Location = new System.Drawing.Point(105, 40);
+            this.comboBox1.MaxDropDownItems = 2;
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(52, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(220, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Selecione o formato do arquivo de resultados";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtNomeExport);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 329);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(322, 117);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Salvar resultados";
+            // 
             // Resultado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 364);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtNomeExport);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(346, 457);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.nAcertos);
@@ -181,6 +218,8 @@
             this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Resultado_FormClosed);
             this.Load += new System.EventHandler(this.Resultado_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +240,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtNomeExport;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

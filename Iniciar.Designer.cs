@@ -78,9 +78,15 @@
             // nPrimeira
             // 
             this.nPrimeira.Location = new System.Drawing.Point(267, 130);
+            this.nPrimeira.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.nPrimeira.Name = "nPrimeira";
             this.nPrimeira.Size = new System.Drawing.Size(52, 20);
             this.nPrimeira.TabIndex = 4;
+            this.nPrimeira.ThousandsSeparator = true;
             this.nPrimeira.Value = new decimal(new int[] {
             1,
             0,
