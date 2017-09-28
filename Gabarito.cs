@@ -54,6 +54,9 @@ namespace Gabarito
         private void Gabarito_Load(object sender, EventArgs e)
         {
             Ngabar.Text = Iniciar.nQuestao.ToString();
+
+            txtGabarito.CharacterCasing = CharacterCasing.Upper;
+
             nt.Text = string.Concat(Ngabar.Text, "/", Iniciar.total.ToString());
         }
 
@@ -108,6 +111,11 @@ namespace Gabarito
 
             gabarito.RemoveAt(gabarito.Count - 1);
             txtGabarito.Focus();
+        }
+
+        private void txtGabarito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = (e.KeyChar == (char)Keys.Space);
         }
     }
 }

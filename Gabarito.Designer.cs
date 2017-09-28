@@ -65,6 +65,7 @@
             this.txtGabarito.Name = "txtGabarito";
             this.txtGabarito.Size = new System.Drawing.Size(41, 20);
             this.txtGabarito.TabIndex = 4;
+            this.txtGabarito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGabarito_KeyPress);
             // 
             // Lquestao
             // 

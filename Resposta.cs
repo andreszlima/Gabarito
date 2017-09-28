@@ -23,6 +23,9 @@ namespace Gabarito
         private void Resposta_Load(object sender, EventArgs e)
         {
             Nquest.Text = Iniciar.nQuestao.ToString();
+
+            txtResposta.CharacterCasing = CharacterCasing.Upper;
+
         }
 
         private void Bproxima_Click(object sender, EventArgs e)
@@ -78,6 +81,11 @@ namespace Gabarito
 
             questoes.RemoveAt(questoes.Count - 1);
             txtResposta.Focus();
+        }
+
+        private void txtResposta_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = (e.KeyChar == (char)Keys.Space);
         }
     }
 }

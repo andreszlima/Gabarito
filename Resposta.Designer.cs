@@ -52,6 +52,7 @@
             this.txtResposta.Name = "txtResposta";
             this.txtResposta.Size = new System.Drawing.Size(41, 20);
             this.txtResposta.TabIndex = 1;
+            this.txtResposta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResposta_KeyPress);
             // 
             // Bproxima
             // 
