@@ -41,7 +41,7 @@ Eu precisava anotar minhas respostas em um arquivo de texto (ou papel), depois p
 
 ## Uso
 
-Não é necessário instalar nada. Basta abrir o arquivo executável, que pode ser baixado aqui: https://github.com/andreszlima/Gabarito/releases
+Não é necessário instalar nada. Basta abrir o arquivo executável, que pode ser baixado aqui: https://github.com/andreszlima/Gabarito/releases/latest
 
 Caso não saiba qual é o arquivo, ele será o único arquivo executável (.exe). Procure sempre o mais atualizado:
 
