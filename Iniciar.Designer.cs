@@ -104,7 +104,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Bfechar);
             this.Controls.Add(this.Bcomecar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Iniciar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Início";

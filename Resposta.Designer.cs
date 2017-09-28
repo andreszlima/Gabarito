@@ -103,7 +103,9 @@
             this.Controls.Add(this.Bproxima);
             this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.Lquestao);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Resposta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resposta";
