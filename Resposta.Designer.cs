@@ -35,6 +35,7 @@
             this.Bterminar = new System.Windows.Forms.Button();
             this.Nquest = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lquestao
@@ -48,7 +49,7 @@
             // 
             // txtResposta
             // 
-            this.txtResposta.Location = new System.Drawing.Point(129, 25);
+            this.txtResposta.Location = new System.Drawing.Point(136, 25);
             this.txtResposta.Name = "txtResposta";
             this.txtResposta.Size = new System.Drawing.Size(41, 20);
             this.txtResposta.TabIndex = 1;
@@ -92,12 +93,21 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(222, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 6;
+            // 
             // Resposta
             // 
             this.AcceptButton = this.Bproxima;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 143);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Nquest);
             this.Controls.Add(this.Bterminar);
@@ -126,5 +136,6 @@
         private System.Windows.Forms.Button Bterminar;
         private System.Windows.Forms.Label Nquest;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
     }
 }

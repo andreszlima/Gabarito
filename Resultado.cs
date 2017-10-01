@@ -161,7 +161,7 @@ namespace Gabarito
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 MessageBox.Show("O nome do arquivo é inválido. Não use caracteres especiais e tente novamente.");

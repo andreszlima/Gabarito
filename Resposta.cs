@@ -26,6 +26,8 @@ namespace Gabarito
 
             txtResposta.CharacterCasing = CharacterCasing.Upper;
 
+            label1.Text = "1/x";
+
         }
 
         private void Bproxima_Click(object sender, EventArgs e)
@@ -35,8 +37,8 @@ namespace Gabarito
             qOld = qOld + 1;
             Nquest.Text = qOld.ToString();
             questoes.Add(txtResposta.Text);
-            
 
+            label1.Text = Convert.ToString(Convert.ToInt32(qOld) - Iniciar.nQuestao + 1) + "/x";
             txtResposta.Text = "";
             txtResposta.Focus();
             Bterminar.Enabled = true;

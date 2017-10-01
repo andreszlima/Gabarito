@@ -61,7 +61,7 @@
             // 
             // txtGabarito
             // 
-            this.txtGabarito.Location = new System.Drawing.Point(128, 25);
+            this.txtGabarito.Location = new System.Drawing.Point(137, 25);
             this.txtGabarito.Name = "txtGabarito";
             this.txtGabarito.Size = new System.Drawing.Size(41, 20);
             this.txtGabarito.TabIndex = 4;
@@ -87,7 +87,7 @@
             // nt
             // 
             this.nt.AutoSize = true;
-            this.nt.Location = new System.Drawing.Point(217, 9);
+            this.nt.Location = new System.Drawing.Point(205, 9);
             this.nt.Name = "nt";
             this.nt.Size = new System.Drawing.Size(12, 13);
             this.nt.TabIndex = 9;
